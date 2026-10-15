@@ -1,21 +1,23 @@
 # tcp-visualizer
 
-Avança pelos estados do handshake TCP, retransmissões e encerramento.
+Step through a TCP connection from the three-way handshake to connection close. Follow packet flow and connection states, and trigger packet loss to see a retransmission.
 
-## Desktop
+## Run
 
-```sh
+Requires the .NET 10 SDK. Browser builds also need the WebAssembly workload: `dotnet workload install wasm-tools`.
+
+### Desktop
+
+~~~sh
 dotnet run --project TcpVisualizer.Desktop/TcpVisualizer.Desktop.csproj
-```
+~~~
 
-## Browser
+### Browser
 
-Requer o workload wasm-tools do .NET 10.
-
-```sh
+~~~sh
 dotnet run --project TcpVisualizer.Browser/TcpVisualizer.Browser.csproj
-```
+~~~
 
-## Exemplo
+## Example
 
-Ative a perda do SYN/ACK e avance os passos para observar a retransmissão.
+Enable SYN-ACK loss and advance the simulation to see the packet retransmit.
