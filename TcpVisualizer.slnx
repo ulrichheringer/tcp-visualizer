@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="TcpVisualizer.Browser/TcpVisualizer.Browser.csproj" />
+  <Project Path="TcpVisualizer.Desktop/TcpVisualizer.Desktop.csproj" />
+  <Project Path="TcpVisualizer/TcpVisualizer.csproj" />
+</Solution>
